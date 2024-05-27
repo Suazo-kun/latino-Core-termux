@@ -93,7 +93,7 @@ buscar_os_version() { // Busca y asigna el valor del Build del sistema operativo
     }
     // os_v.osMayor = (int)strtol(buffer.version, (char **)NULL, 10);
     // os_v.osMayor = atoi(buffer.version);
-    os_v.osMayor = buffer.release;
+    os_v.osMayor = (unsigned long)buffer.release;
 #endif
 
     return os_v;
